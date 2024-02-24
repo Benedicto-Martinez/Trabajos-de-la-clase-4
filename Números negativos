@@ -1,0 +1,24 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int suma = 0;
+        int numero;
+
+        do
+        {
+            Console.Write("Ingrese un número entero positivo (o un número negativo para finalizar): ");
+            numero = int.Parse(Console.ReadLine());
+
+            if (numero >= 0)
+            {
+                suma += numero;
+            }
+
+        } while (numero >= 0);
+
+        Console.WriteLine($"La suma de los números ingresados es: {suma}");
+    }
+}
