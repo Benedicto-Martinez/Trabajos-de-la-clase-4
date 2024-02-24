@@ -1,0 +1,24 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string contraseñaCorrecta = "jutiapa";
+        string contraseñaIngresada;
+
+        do
+        {
+            Console.Write("Ingrese la contraseña: ");
+            contraseñaIngresada = Console.ReadLine();
+
+            if (contraseñaIngresada != contraseñaCorrecta)
+            {
+                Console.WriteLine("Contraseña incorrecta. Inténtelo de nuevo.");
+            }
+
+        } while (contraseñaIngresada != contraseñaCorrecta);
+
+        Console.WriteLine("Contraseña correcta. Acceso concedido.");
+    }
+}
